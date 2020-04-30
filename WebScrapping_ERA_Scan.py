@@ -26,7 +26,7 @@ time.sleep(1)
 
 from bs4 import BeautifulSoup
 import requests
-import lxml
+from lxml import html
 url= 'https://parivahan.gov.in/rcdlstatus/?pur_cd=101'
 r=requests.get(url)
 soup = BeautifulSoup(r.content, 'lxml') 
